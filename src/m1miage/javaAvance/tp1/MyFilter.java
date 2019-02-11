@@ -7,7 +7,7 @@ public class MyFilter implements FilenameFilter {
 
 	@Override
 	public boolean accept(File dir, String name) {
-
+		System.out.println("WAoomia");
 		if (name.endsWith(".java")) {
             return true;
         }
