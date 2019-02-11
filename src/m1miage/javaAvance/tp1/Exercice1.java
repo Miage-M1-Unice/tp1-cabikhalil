@@ -51,14 +51,8 @@ public class Exercice1 {
 		rc.listeContenuRepo();
 
 		rc.listeContenuRepos();
-//		FilenameFilter ff = new FilenameFilter(){
-//
-//			@Override
-//			public boolean accept(File dir, String name) {
-//				// TODO Auto-generated method stub
-//				return false;
-//			}};
 		
-		rc.filtreListeContenuRepos(".java");
+		MyFilter mf = new MyFilter();
+		rc.filtreListeContenuRepos(mf);
 	}
 }
